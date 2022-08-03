@@ -532,6 +532,7 @@ header .header-login {
 .card1 {
   left: 69%;
   top: 14%;
+  margin: -20px;
   -webkit-animation: Orbita 15s linear infinite;
           animation: Orbita 15s linear infinite;
 }
@@ -539,12 +540,14 @@ header .header-login {
 .card2 {
   left: 47%;
   top: 65%;
-  -webkit-animation: Orbita2 14s linear infinite;
-          animation: Orbita2 14s linear infinite;
+  margin: -20px;
+  -webkit-animation: Orbita2 24s linear infinite;
+          animation: Orbita2 24s linear infinite;
 }
 
 .card3 {
   left: 9%;
+  margin: -20px;
   -webkit-animation: Orbita3 13s linear infinite;
           animation: Orbita3 13s linear infinite;
 }
@@ -555,7 +558,7 @@ header .header-login {
 
 .animation,
 .animation-next {
-  transition: all 0.2s ease-in-out;
+  transition: all 1.5s ease-in-out;
   transform: translate3d(0, 30px, 0);
   opacity: 0;
 }
@@ -1436,8 +1439,9 @@ header .header-login {
     padding: 80px 0 0px;
   }
 
-  .swiper-slide {
-    width: 330px;
+  .swiper {
+    max-width: 320px;
+    width: 100%;
   }
 
   .rewiews__title {
@@ -1528,6 +1532,13 @@ header .header-login {
   .social svg {
     width: 54px;
     height: 44px;
+  }
+}
+
+@media (max-width: 370px) {
+  .swiper {
+    max-width: 300px;
+    width: 100%;
   }
 }
 
